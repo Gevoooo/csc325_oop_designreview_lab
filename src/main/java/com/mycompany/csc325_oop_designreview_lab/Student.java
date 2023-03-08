@@ -18,8 +18,8 @@ public class Student extends Human{
      * @param name
      * @param age 
      */
-    public Student(String name, short age) {
-        super(name, age);
+    public Student(String name, int age) {
+        super(name, (short)age);
         address = "";
     }
     
@@ -29,8 +29,8 @@ public class Student extends Human{
      * @param age
      * @param gpa 
      */
-    public Student(String name, short age, int gpa) {
-        super(name, age);
+    public Student(String name, int age, int gpa) {
+        super(name, (short)age);
         this.gpa = gpa;
         address = "";
     }
