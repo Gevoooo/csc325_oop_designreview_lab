@@ -11,9 +11,16 @@ package com.mycompany.csc325_oop_designreview_lab;
 public class Student extends Human{
     
     private String address;
+    private int gpa;
     
     public Student(String name, short age) {
         super(name, age);
+        address = "";
+    }
+    
+    public Student(String name, short age, int gpa) {
+        super(name, age);
+        this.gpa = gpa;
         address = "";
     }
 
@@ -26,8 +33,13 @@ public class Student extends Human{
     public void setAddress(String address) {
         this.address = address;
     }
+    
+    public int getGPA() {
+        return gpa;
+    }
 
-	// ToDo 3: Add a field for GPA and create setter and getter
-	
+    public void setGPA(int gpa) {
+        this.gpa = gpa;
+    }
 	// ToDo 4: Add comments to your code
 }
