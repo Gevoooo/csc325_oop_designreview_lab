@@ -10,7 +10,14 @@ package com.mycompany.csc325_oop_designreview_lab;
  */
 public class Freshman extends Student{
     
-    public Freshman(String name, int age, int gpa) {
-        super(name, (short)age, gpa);
+    private int credits;
+    
+    public Freshman(String name, int age, int credits) {
+        super(name, (short)age);
+        this.credits = credits;
+    }
+    
+    public String toString() {
+        return "Freshman{" + "name=" + this.getName() + ", age=" + this.getAge() + ", address=" + this.getAddress() + ", gpa=" + gpa + ", credits=" + credits + '}';
     }
 }

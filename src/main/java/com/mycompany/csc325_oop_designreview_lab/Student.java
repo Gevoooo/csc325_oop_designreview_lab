@@ -18,13 +18,8 @@ public class Student extends Human{
      */
     public Student(String name, int age) {
         super(name, (short)age);
-        gpa = 0;
-        address = "";
-    }
-
-    public Student(String name, short age, int gpa) {
-        super(name, age);
-        this.gpa = gpa;
+        gpa = -1;
+        address = "NoAddress";
     }
     
     /**
@@ -59,5 +54,10 @@ public class Student extends Human{
      */
     public void setGPA(int gpa) {
         this.gpa = gpa;
+    }
+
+    @Override
+    public String toString() {
+        return "Student{" + "name=" + this.getName() + ", age=" + this.getAge() + ", address=" + this.getAddress() + ", gpa=" + gpa + '}';
     }
 }
