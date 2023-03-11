@@ -11,8 +11,6 @@ package com.mycompany.csc325_oop_designreview_lab;
 public class MainClass {
 
  public static void main(String[] args) {
-        // Todo 7: Create two classes for Freshman and Senior 
-
         // ToDo 8: The senior class should have a minimum of 85 credits  
 
         // ToDo 7: Add a toString method for Student class
@@ -21,11 +19,10 @@ public class MainClass {
         Student std1= new Student("James", 20);
         // ToDo 10: Add a toString method for Senior class
 
-        Freshman std2= new Student("James", 20, 12); // name, age, credits
+        Student std2= new Freshman("James", 20, 12); // name, age, credits
 
-        Senior std3 = new Student("John", 30, 90);
+        Student std3 = new Senior("John", 30, 90);
 
-        // ToDo 8: Set the gpa of the student using the scanner and user
         // ToDo 11: Set the gpa of the student using the scanner and user
         // 			input and then print the output.
 
@@ -35,10 +32,8 @@ public class MainClass {
         
         System.out.println(std3);
 
-        // ToDo 9: add comments and explain your code
         // ToDo 12: add comments and explain your code
 
-        // ToDo 10: submit using a pull request.
         // ToDo 13: submit using a pull request.
     }
 
