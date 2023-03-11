@@ -10,9 +10,7 @@ package com.mycompany.csc325_oop_designreview_lab;
  */
 public class Student extends Human{
     
-    private String address;
-    private int gpa;
-    
+    protected int gpa;
     /**
      * Constructor with name and age
      * @param name
@@ -20,21 +18,10 @@ public class Student extends Human{
      */
     public Student(String name, int age) {
         super(name, (short)age);
+        gpa = 0;
         address = "";
     }
     
-    /**
-     * Constructor with name, age, and gpa
-     * @param name
-     * @param age
-     * @param gpa 
-     */
-    public Student(String name, int age, int gpa) {
-        super(name, (short)age);
-        this.gpa = gpa;
-        address = "";
-    }
-
     /**
      * Gets the address.
      * @return 
@@ -58,7 +45,7 @@ public class Student extends Human{
      * @return 
      */
     public int getGPA() {
-        return gpa;
+        return this.gpa;
     }
 
     /**
