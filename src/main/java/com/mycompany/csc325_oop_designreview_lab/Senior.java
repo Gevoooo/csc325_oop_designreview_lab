@@ -12,8 +12,12 @@ public class Senior extends Student{
     
     private int credits;
     
-    public Senior(String name, int age, int credits) {
+    public Senior(String name, int age, int credits) throws Exception {
         super(name, (short)age);
+        if (credits < 85){
+            Exception e = new Exception();
+            throw e;
+        }
         this.credits = credits;
     }
     public String toString() {
