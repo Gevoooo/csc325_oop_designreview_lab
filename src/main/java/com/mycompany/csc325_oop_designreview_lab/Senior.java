@@ -12,13 +12,12 @@ public class Senior extends Student{
     
     private int credits;
     
-    public Senior(String name, int age, int credits) throws Exception {
+    public Senior(String name, int age, int credits) {
         super(name, (short)age);
-        if (credits < 85){
-            Exception e = new Exception();
-            throw e;
-        }
-        this.credits = credits;
+        if (credits < 85)
+            System.out.println("Error: Credits must be 85 or above.");
+        else
+            this.credits = credits;
     }
     public String toString() {
         return "Senior{" + "name=" + this.getName() + ", age=" + this.getAge() + ", address=" + this.getAddress() + ", gpa=" + gpa + ", credits=" + credits + '}';
