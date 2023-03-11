@@ -21,6 +21,11 @@ public class Student extends Human{
         gpa = 0;
         address = "";
     }
+
+    public Student(String name, short age, int gpa) {
+        super(name, age);
+        this.gpa = gpa;
+    }
     
     /**
      * Gets the address.

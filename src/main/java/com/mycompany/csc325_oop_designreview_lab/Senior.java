@@ -11,7 +11,6 @@ package com.mycompany.csc325_oop_designreview_lab;
 public class Senior extends Student{
     
     public Senior(String name, int age, int gpa) {
-        super(name, age);
-        this.gpa = gpa;
+        super(name, (short)age, gpa);
     }
 }
